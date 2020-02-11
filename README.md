@@ -2,6 +2,6 @@
 
 This is a esp32 custom board.
 
-# Authors;
+# Authors:
 - Esteban Corredor (Doenec)
 - Jose Regalado (bashman)
