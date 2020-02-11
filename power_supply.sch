@@ -1,0 +1,372 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "Power Supply"
+Date "2020-02-11"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:LM2596S-3.3 U6
+U 1 1 5E446CDB
+P 5600 1750
+F 0 "U6" H 5600 2117 50  0000 C CNN
+F 1 "LM2596S-3.3" H 5600 2026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5650 1500 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 5600 1750 50  0001 C CNN
+	1    5600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5E44882A
+P 7100 1850
+F 0 "L1" H 7100 2065 50  0000 C CNN
+F 1 "INDUCTOR" H 7100 1974 50  0000 C CNN
+F 2 "" H 7100 1850 50  0001 C CNN
+F 3 "~" H 7100 1850 50  0001 C CNN
+	1    7100 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5822 D1
+U 1 1 5E44A738
+P 6450 2100
+F 0 "D1" V 6404 2180 50  0000 L CNN
+F 1 "1N5822" V 6495 2180 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6450 1925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 6450 2100 50  0001 C CNN
+	1    6450 2100
+	0    1    1    0   
+$EndComp
+Text GLabel 1150 1650 0    50   Input ~ 0
++12V
+$Comp
+L power:+5V #PWR02
+U 1 1 5E44E8CC
+P 1650 2150
+F 0 "#PWR02" H 1650 2000 50  0001 C CNN
+F 1 "+5V" H 1665 2323 50  0000 C CNN
+F 2 "" H 1650 2150 50  0001 C CNN
+F 3 "" H 1650 2150 50  0001 C CNN
+	1    1650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5E44ED22
+P 1650 1650
+F 0 "#PWR01" H 1650 1500 50  0001 C CNN
+F 1 "+12V" H 1665 1823 50  0000 C CNN
+F 2 "" H 1650 1650 50  0001 C CNN
+F 3 "" H 1650 1650 50  0001 C CNN
+	1    1650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5E44F126
+P 1650 2650
+F 0 "#PWR03" H 1650 2500 50  0001 C CNN
+F 1 "+3.3V" H 1665 2823 50  0000 C CNN
+F 2 "" H 1650 2650 50  0001 C CNN
+F 3 "" H 1650 2650 50  0001 C CNN
+	1    1650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E44F71B
+P 1650 3150
+F 0 "#PWR04" H 1650 2900 50  0001 C CNN
+F 1 "GND" H 1655 2977 50  0000 C CNN
+F 2 "" H 1650 3150 50  0001 C CNN
+F 3 "" H 1650 3150 50  0001 C CNN
+	1    1650 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 2150 0    50   Input ~ 0
++5V
+Text GLabel 1150 2650 0    50   Input ~ 0
++3.3V
+Wire Wire Line
+	1100 2150 1350 2150
+Wire Wire Line
+	1150 1650 1350 1650
+Wire Wire Line
+	1150 2650 1350 2650
+Text GLabel 1100 3150 0    50   Input ~ 0
+GND
+Wire Wire Line
+	1100 3150 1350 3150
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E4545C2
+P 1350 1600
+F 0 "#FLG01" H 1350 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1773 50  0000 C CNN
+F 2 "" H 1350 1600 50  0001 C CNN
+F 3 "~" H 1350 1600 50  0001 C CNN
+	1    1350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1600 1350 1650
+Connection ~ 1350 1650
+Wire Wire Line
+	1350 1650 1650 1650
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E45548C
+P 1350 2050
+F 0 "#FLG02" H 1350 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 2223 50  0000 C CNN
+F 2 "" H 1350 2050 50  0001 C CNN
+F 3 "~" H 1350 2050 50  0001 C CNN
+	1    1350 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5E456195
+P 1350 2550
+F 0 "#FLG03" H 1350 2625 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 2723 50  0000 C CNN
+F 2 "" H 1350 2550 50  0001 C CNN
+F 3 "~" H 1350 2550 50  0001 C CNN
+	1    1350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5E45662D
+P 1350 3050
+F 0 "#FLG04" H 1350 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 3223 50  0000 C CNN
+F 2 "" H 1350 3050 50  0001 C CNN
+F 3 "~" H 1350 3050 50  0001 C CNN
+	1    1350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3050 1350 3150
+Connection ~ 1350 3150
+Wire Wire Line
+	1350 3150 1650 3150
+Wire Wire Line
+	1350 2550 1350 2650
+Connection ~ 1350 2650
+Wire Wire Line
+	1350 2650 1650 2650
+Wire Wire Line
+	1350 2050 1350 2150
+Connection ~ 1350 2150
+Wire Wire Line
+	1350 2150 1650 2150
+Wire Wire Line
+	5600 2050 5600 2350
+Wire Wire Line
+	5100 1850 4850 1850
+Text GLabel 3600 1650 0    50   Input ~ 0
++12V
+Wire Wire Line
+	6100 1850 6450 1850
+Wire Wire Line
+	6450 1950 6450 1850
+Connection ~ 6450 1850
+Wire Wire Line
+	6450 1850 6850 1850
+Wire Wire Line
+	6450 2250 6450 2350
+Wire Wire Line
+	7350 1850 7500 1850
+Wire Wire Line
+	6100 1650 6700 1650
+Wire Wire Line
+	6700 1650 6700 1500
+Wire Wire Line
+	6700 1500 7500 1500
+Wire Wire Line
+	7500 1500 7500 1850
+Connection ~ 7500 1850
+$Comp
+L Device:CP C1
+U 1 1 5E45FA75
+P 4150 2000
+F 0 "C1" H 4268 2046 50  0000 L CNN
+F 1 "680ufx25v" H 4268 1955 50  0000 L CNN
+F 2 "" H 4188 1850 50  0001 C CNN
+F 3 "~" H 4150 2000 50  0001 C CNN
+	1    4150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5E461F32
+P 7500 2100
+F 0 "C3" H 7618 2146 50  0000 L CNN
+F 1 "220uFx10v" H 7618 2055 50  0000 L CNN
+F 2 "" H 7538 1950 50  0001 C CNN
+F 3 "~" H 7500 2100 50  0001 C CNN
+	1    7500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1850 7500 1950
+Wire Wire Line
+	7500 2350 7500 2250
+Wire Wire Line
+	7500 1850 8300 1850
+Text GLabel 8300 1850 2    50   Input ~ 0
++3.3V
+Wire Wire Line
+	4850 1850 4850 2350
+Wire Wire Line
+	3600 1650 4150 1650
+Wire Wire Line
+	4150 1850 4150 1650
+Connection ~ 4150 1650
+Wire Wire Line
+	4150 1650 5100 1650
+Wire Wire Line
+	4150 2150 4150 2350
+Wire Wire Line
+	4150 2350 4100 2350
+Text GLabel 4100 2350 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7500 2350 6450 2350
+Connection ~ 4150 2350
+Connection ~ 4850 2350
+Wire Wire Line
+	4850 2350 4150 2350
+Connection ~ 5600 2350
+Wire Wire Line
+	5600 2350 4850 2350
+Connection ~ 6450 2350
+Wire Wire Line
+	6450 2350 5600 2350
+$Comp
+L Regulator_Switching:LM2596S-3.3 U7
+U 1 1 5E47EDD9
+P 5600 3250
+F 0 "U7" H 5600 3617 50  0000 C CNN
+F 1 "LM2596S-5.0" H 5600 3526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5650 3000 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 5600 3250 50  0001 C CNN
+	1    5600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 5E47EDE3
+P 7100 3350
+F 0 "L2" H 7100 3565 50  0000 C CNN
+F 1 "33uH" H 7100 3474 50  0000 C CNN
+F 2 "" H 7100 3350 50  0001 C CNN
+F 3 "~" H 7100 3350 50  0001 C CNN
+	1    7100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N5822 D2
+U 1 1 5E47EDED
+P 6450 3600
+F 0 "D2" V 6404 3680 50  0000 L CNN
+F 1 "1N5822" V 6495 3680 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 6450 3425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88526/1n5820.pdf" H 6450 3600 50  0001 C CNN
+	1    6450 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3550 5600 3850
+Wire Wire Line
+	5100 3350 4850 3350
+Text GLabel 3600 3150 0    50   Input ~ 0
++12V
+Wire Wire Line
+	6100 3350 6450 3350
+Wire Wire Line
+	6450 3450 6450 3350
+Connection ~ 6450 3350
+Wire Wire Line
+	6450 3350 6850 3350
+Wire Wire Line
+	6450 3750 6450 3850
+Wire Wire Line
+	7350 3350 7500 3350
+Wire Wire Line
+	6100 3150 6750 3150
+Wire Wire Line
+	6750 3150 6750 3000
+Wire Wire Line
+	6750 3000 7500 3000
+Wire Wire Line
+	7500 3000 7500 3350
+Connection ~ 7500 3350
+$Comp
+L Device:CP C2
+U 1 1 5E47EE05
+P 4150 3500
+F 0 "C2" H 4268 3546 50  0000 L CNN
+F 1 "680ufx25v" H 4268 3455 50  0000 L CNN
+F 2 "" H 4188 3350 50  0001 C CNN
+F 3 "~" H 4150 3500 50  0001 C CNN
+	1    4150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5E47EE0F
+P 7500 3600
+F 0 "C4" H 7618 3646 50  0000 L CNN
+F 1 "220uFx10v" H 7618 3555 50  0000 L CNN
+F 2 "" H 7538 3450 50  0001 C CNN
+F 3 "~" H 7500 3600 50  0001 C CNN
+	1    7500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3350 7500 3450
+Wire Wire Line
+	7500 3850 7500 3750
+Wire Wire Line
+	7500 3350 8300 3350
+Text GLabel 8300 3350 2    50   Input ~ 0
++5V
+Wire Wire Line
+	4850 3350 4850 3850
+Wire Wire Line
+	3600 3150 4150 3150
+Wire Wire Line
+	4150 3350 4150 3150
+Connection ~ 4150 3150
+Wire Wire Line
+	4150 3150 5100 3150
+Wire Wire Line
+	4150 3650 4150 3850
+Wire Wire Line
+	4150 3850 4100 3850
+Text GLabel 4100 3850 0    50   Input ~ 0
+GND
+Wire Wire Line
+	7500 3850 6450 3850
+Connection ~ 4150 3850
+Connection ~ 4850 3850
+Wire Wire Line
+	4850 3850 4150 3850
+Connection ~ 5600 3850
+Wire Wire Line
+	5600 3850 4850 3850
+Connection ~ 6450 3850
+Wire Wire Line
+	6450 3850 5600 3850
+$EndSCHEMATC
