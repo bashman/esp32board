@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name BluePill_breakouts)(type KiCad)(uri ${KIPRJMOD}/library/BluePill_breakouts.pretty)(options "")(descr ""))
+  (lib (name jacks)(type KiCad)(uri ${KIPRJMOD}/library/jacks.pretty)(options "")(descr ""))
+  (lib (name chinabluepill)(type KiCad)(uri ${KIPRJMOD}/library/chinabluepill.pretty)(options "")(descr ""))
+  (lib (name bluetooth)(type KiCad)(uri ${KIPRJMOD}/library/bluetooth.pretty)(options "")(descr ""))
+  (lib (name modules)(type KiCad)(uri ${KIPRJMOD}/library/modules.pretty)(options "")(descr ""))
+)

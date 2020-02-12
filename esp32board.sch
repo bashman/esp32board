@@ -140,4 +140,15 @@ F 3 "~" H 3050 3200 50  0001 C CNN
 	1    3050 3200
 	1    0    0    -1  
 $EndComp
+$Comp
+L bluepill_breakouts:BluePill_STM32F103C U8
+U 1 1 5E43C0CB
+P 1650 4000
+F 0 "U8" H 1675 2527 50  0000 C CNN
+F 1 "BluePill_STM32F103C" H 1675 2436 50  0000 C CNN
+F 2 "BluePill_breakouts:BluePill_STM32F103C" H 1700 2400 50  0001 C CNN
+F 3 "www.rogerclark.net" H 1650 2500 50  0001 C CNN
+	1    1650 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
