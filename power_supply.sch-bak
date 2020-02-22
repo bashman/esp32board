@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 4
 Title "Power Supply"
 Date "2020-02-11"
 Rev ""
@@ -223,8 +223,8 @@ Wire Wire Line
 Wire Wire Line
 	7500 2350 7500 2250
 Wire Wire Line
-	7500 1850 8300 1850
-Text GLabel 8300 1850 2    50   Input ~ 0
+	7500 1850 8250 1850
+Text GLabel 8250 1850 2    50   Input ~ 0
 +3.3V
 Wire Wire Line
 	4850 1850 4850 2350
@@ -369,4 +369,23 @@ Wire Wire Line
 Connection ~ 6450 3850
 Wire Wire Line
 	6450 3850 5600 3850
+$Comp
+L Connector:Jack-DC J1
+U 1 1 5E486E13
+P 1300 4150
+F 0 "J1" H 1357 4475 50  0000 C CNN
+F 1 "Jack-DC" H 1357 4384 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1350 4110 50  0001 C CNN
+F 3 "~" H 1350 4110 50  0001 C CNN
+	1    1300 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 4050 2    50   Input ~ 0
++12V
+Text GLabel 2000 4250 2    50   Input ~ 0
+GND
+Wire Wire Line
+	1600 4250 2000 4250
+Wire Wire Line
+	1600 4050 2000 4050
 $EndSCHEMATC

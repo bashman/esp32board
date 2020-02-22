@@ -1,0 +1,820 @@
+EESchema Schematic File Version 4
+LIBS:4550-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Network08_US RN1
+U 1 1 5D4248CF
+P 3050 1800
+F 0 "RN1" H 3438 1846 50  0000 L CNN
+F 1 "8*10k" H 3438 1755 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 3525 1800 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3050 1800 50  0001 C CNN
+	1    3050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5D42739A
+P 1350 3600
+F 0 "SW2" H 1350 3885 50  0000 C CNN
+F 1 "SW_Push" H 1350 3794 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1350 3800 50  0001 C CNN
+F 3 "~" H 1350 3800 50  0001 C CNN
+	1    1350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5D42A566
+P 1350 4200
+F 0 "SW3" H 1350 4485 50  0000 C CNN
+F 1 "SW_Push" H 1350 4394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1350 4400 50  0001 C CNN
+F 3 "~" H 1350 4400 50  0001 C CNN
+	1    1350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5D42A570
+P 1350 4800
+F 0 "SW4" H 1350 5085 50  0000 C CNN
+F 1 "SW_Push" H 1350 4994 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1350 5000 50  0001 C CNN
+F 3 "~" H 1350 5000 50  0001 C CNN
+	1    1350 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 5D432CBC
+P 1350 5350
+F 0 "SW5" H 1350 5635 50  0000 C CNN
+F 1 "SW_Push" H 1350 5544 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1350 5550 50  0001 C CNN
+F 3 "~" H 1350 5550 50  0001 C CNN
+	1    1350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 5D432CC6
+P 1350 5950
+F 0 "SW6" H 1350 6235 50  0000 C CNN
+F 1 "SW_Push" H 1350 6144 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1350 6150 50  0001 C CNN
+F 3 "~" H 1350 6150 50  0001 C CNN
+	1    1350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5D432CD0
+P 1350 6500
+F 0 "SW7" H 1350 6785 50  0000 C CNN
+F 1 "SW_Push" H 1350 6694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1350 6700 50  0001 C CNN
+F 3 "~" H 1350 6700 50  0001 C CNN
+	1    1350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5D432CDA
+P 1350 7050
+F 0 "SW8" H 1350 7335 50  0000 C CNN
+F 1 "SW_Push" H 1350 7244 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1350 7250 50  0001 C CNN
+F 3 "~" H 1350 7250 50  0001 C CNN
+	1    1350 7050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 1450 0    50   Input ~ 0
++5V
+Wire Wire Line
+	2100 1450 2650 1450
+Wire Wire Line
+	2650 1450 2650 1600
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D4261A3
+P 1350 3000
+F 0 "SW1" H 1350 3285 50  0000 C CNN
+F 1 "SW_Push" H 1350 3194 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 1350 3200 50  0001 C CNN
+F 3 "~" H 1350 3200 50  0001 C CNN
+	1    1350 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2000 2750 2050
+Wire Wire Line
+	2850 2000 2850 2100
+Wire Wire Line
+	1050 2100 1050 4200
+Wire Wire Line
+	1050 4200 1150 4200
+Wire Wire Line
+	2950 2000 2950 2150
+Wire Wire Line
+	1000 2150 1000 4800
+Wire Wire Line
+	1000 4800 1150 4800
+Wire Wire Line
+	1100 3600 1150 3600
+Wire Wire Line
+	3050 2000 3050 2200
+Wire Wire Line
+	3050 2200 950  2200
+Wire Wire Line
+	950  2200 950  5350
+Wire Wire Line
+	950  5350 1150 5350
+Wire Wire Line
+	3150 2000 3150 2250
+Wire Wire Line
+	3150 2250 900  2250
+Wire Wire Line
+	900  2250 900  5950
+Wire Wire Line
+	900  5950 1150 5950
+Wire Wire Line
+	3250 2000 3250 2300
+Wire Wire Line
+	3250 2300 850  2300
+Wire Wire Line
+	3350 2000 3350 2350
+Wire Wire Line
+	3350 2350 800  2350
+Wire Wire Line
+	1100 2050 1100 3600
+Wire Wire Line
+	850  2300 850  6500
+Wire Wire Line
+	850  6500 1150 6500
+Wire Wire Line
+	800  2350 800  7050
+Wire Wire Line
+	800  7050 1150 7050
+Wire Wire Line
+	1550 3000 1550 3600
+$Comp
+L Connector:Conn_01x08_Male J6
+U 1 1 5D4A3EF6
+P 2950 2700
+F 0 "J6" V 2877 2628 50  0000 C CNN
+F 1 "Conn_01x08_Male" V 2786 2628 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2950 2700 50  0001 C CNN
+F 3 "~" H 2950 2700 50  0001 C CNN
+	1    2950 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 2150 1000 2150
+Wire Wire Line
+	2850 2100 1050 2100
+Wire Wire Line
+	2750 2050 1100 2050
+Wire Wire Line
+	2650 2000 1150 2000
+Wire Wire Line
+	2650 2000 2650 2500
+Connection ~ 2650 2000
+Wire Wire Line
+	2750 2050 2750 2500
+Connection ~ 2750 2050
+Wire Wire Line
+	2850 2100 2850 2500
+Connection ~ 2850 2100
+Wire Wire Line
+	2950 2150 2950 2500
+Connection ~ 2950 2150
+Wire Wire Line
+	3050 2200 3050 2500
+Connection ~ 3050 2200
+Wire Wire Line
+	3150 2250 3150 2500
+Connection ~ 3150 2250
+Wire Wire Line
+	3250 2300 3250 2500
+Connection ~ 3250 2300
+Wire Wire Line
+	3350 2350 3350 2500
+Connection ~ 3350 2350
+Wire Wire Line
+	1150 2000 1150 3000
+Connection ~ 1550 3600
+Wire Wire Line
+	1550 3600 1550 4200
+Connection ~ 1550 4200
+Wire Wire Line
+	1550 4200 1550 4800
+Connection ~ 1550 4800
+Wire Wire Line
+	1550 4800 1550 5350
+Connection ~ 1550 5350
+Wire Wire Line
+	1550 5350 1550 5950
+Connection ~ 1550 5950
+Wire Wire Line
+	1550 5950 1550 6500
+Connection ~ 1550 6500
+Wire Wire Line
+	1550 6500 1550 6750
+Text GLabel 1950 6750 2    50   Input ~ 0
+GND
+Wire Wire Line
+	1950 6750 1550 6750
+Connection ~ 1550 6750
+Wire Wire Line
+	1550 6750 1550 7050
+$Comp
+L Switch:SW_DIP_x08 SW19
+U 1 1 5D79D3B2
+P 7100 5250
+F 0 "SW19" V 7054 5780 50  0000 L CNN
+F 1 "SW_DIP_x08" V 7145 5780 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.7" H 7100 5250 50  0001 C CNN
+F 3 "~" H 7100 5250 50  0001 C CNN
+	1    7100 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW14
+U 1 1 5D7A3C44
+P 5750 3450
+F 0 "SW14" H 5750 3735 50  0000 C CNN
+F 1 "SW_Push" H 5750 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 5750 3650 50  0001 C CNN
+F 3 "~" H 5750 3650 50  0001 C CNN
+	1    5750 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW15
+U 1 1 5D7AD67B
+P 6200 3450
+F 0 "SW15" H 6200 3735 50  0000 C CNN
+F 1 "SW_Push" H 6200 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 6200 3650 50  0001 C CNN
+F 3 "~" H 6200 3650 50  0001 C CNN
+	1    6200 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW16
+U 1 1 5D7B596F
+P 6600 3450
+F 0 "SW16" H 6600 3735 50  0000 C CNN
+F 1 "SW_Push" H 6600 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 6600 3650 50  0001 C CNN
+F 3 "~" H 6600 3650 50  0001 C CNN
+	1    6600 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW17
+U 1 1 5D7B5979
+P 7050 3450
+F 0 "SW17" H 7050 3735 50  0000 C CNN
+F 1 "SW_Push" H 7050 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 7050 3650 50  0001 C CNN
+F 3 "~" H 7050 3650 50  0001 C CNN
+	1    7050 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW20
+U 1 1 5D7BBAE0
+P 7500 3450
+F 0 "SW20" H 7500 3735 50  0000 C CNN
+F 1 "SW_Push" H 7500 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 7500 3650 50  0001 C CNN
+F 3 "~" H 7500 3650 50  0001 C CNN
+	1    7500 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW21
+U 1 1 5D7BBAEA
+P 7950 3450
+F 0 "SW21" H 7950 3735 50  0000 C CNN
+F 1 "SW_Push" H 7950 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 7950 3650 50  0001 C CNN
+F 3 "~" H 7950 3650 50  0001 C CNN
+	1    7950 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW22
+U 1 1 5D7BBAF4
+P 8350 3450
+F 0 "SW22" H 8350 3735 50  0000 C CNN
+F 1 "SW_Push" H 8350 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 8350 3650 50  0001 C CNN
+F 3 "~" H 8350 3650 50  0001 C CNN
+	1    8350 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW23
+U 1 1 5D7BBAFE
+P 8800 3450
+F 0 "SW23" H 8800 3735 50  0000 C CNN
+F 1 "SW_Push" H 8800 3644 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 8800 3650 50  0001 C CNN
+F 3 "~" H 8800 3650 50  0001 C CNN
+	1    8800 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_DIP_x08 SW18
+U 1 1 5D7D5C43
+P 7100 1700
+F 0 "SW18" V 7054 2230 50  0000 L CNN
+F 1 "SW_DIP_x08" V 7145 2230 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm" H 7100 1700 50  0001 C CNN
+F 3 "~" H 7100 1700 50  0001 C CNN
+	1    7100 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 3250 5750 2000
+Wire Wire Line
+	5750 2000 6800 2000
+Wire Wire Line
+	6200 3250 6200 2100
+Wire Wire Line
+	6200 2100 6900 2100
+Wire Wire Line
+	6900 2100 6900 2000
+Wire Wire Line
+	7000 2000 7000 2200
+Wire Wire Line
+	7000 2200 6600 2200
+Wire Wire Line
+	6600 2200 6600 3250
+Wire Wire Line
+	7100 2000 7100 2300
+Wire Wire Line
+	7100 2300 7050 2300
+Wire Wire Line
+	7050 2300 7050 3250
+Wire Wire Line
+	7200 2000 7200 2300
+Wire Wire Line
+	7200 2300 7500 2300
+Wire Wire Line
+	7500 2300 7500 3250
+Wire Wire Line
+	7300 2000 7300 2200
+Wire Wire Line
+	7300 2200 7950 2200
+Wire Wire Line
+	7950 2200 7950 3250
+Wire Wire Line
+	7400 2000 7400 2100
+Wire Wire Line
+	7400 2100 8350 2100
+Wire Wire Line
+	8350 2100 8350 3250
+Wire Wire Line
+	7500 2000 7600 2000
+Wire Wire Line
+	8800 2000 8800 3250
+$Comp
+L Device:R R9
+U 1 1 5D803FCD
+P 4550 1400
+F 0 "R9" H 4620 1446 50  0000 L CNN
+F 1 "R" H 4620 1355 50  0000 L CNN
+F 2 "" V 4480 1400 50  0001 C CNN
+F 3 "~" H 4550 1400 50  0001 C CNN
+	1    4550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5D804F0F
+P 4800 1400
+F 0 "R10" H 4870 1446 50  0000 L CNN
+F 1 "R" H 4870 1355 50  0000 L CNN
+F 2 "" V 4730 1400 50  0001 C CNN
+F 3 "~" H 4800 1400 50  0001 C CNN
+	1    4800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5D80BBDE
+P 5050 1400
+F 0 "R11" H 5120 1446 50  0000 L CNN
+F 1 "R" H 5120 1355 50  0000 L CNN
+F 2 "" V 4980 1400 50  0001 C CNN
+F 3 "~" H 5050 1400 50  0001 C CNN
+	1    5050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5D80BBE8
+P 5300 1400
+F 0 "R12" H 5370 1446 50  0000 L CNN
+F 1 "R" H 5370 1355 50  0000 L CNN
+F 2 "" V 5230 1400 50  0001 C CNN
+F 3 "~" H 5300 1400 50  0001 C CNN
+	1    5300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5D810C50
+P 5550 1400
+F 0 "R13" H 5620 1446 50  0000 L CNN
+F 1 "R" H 5620 1355 50  0000 L CNN
+F 2 "" V 5480 1400 50  0001 C CNN
+F 3 "~" H 5550 1400 50  0001 C CNN
+	1    5550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5D810C5A
+P 5800 1400
+F 0 "R14" H 5870 1446 50  0000 L CNN
+F 1 "R" H 5870 1355 50  0000 L CNN
+F 2 "" V 5730 1400 50  0001 C CNN
+F 3 "~" H 5800 1400 50  0001 C CNN
+	1    5800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5D810C64
+P 6050 1400
+F 0 "R15" H 6120 1446 50  0000 L CNN
+F 1 "R" H 6120 1355 50  0000 L CNN
+F 2 "" V 5980 1400 50  0001 C CNN
+F 3 "~" H 6050 1400 50  0001 C CNN
+	1    6050 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5D810C6E
+P 6300 1400
+F 0 "R16" H 6370 1446 50  0000 L CNN
+F 1 "R" H 6370 1355 50  0000 L CNN
+F 2 "" V 6230 1400 50  0001 C CNN
+F 3 "~" H 6300 1400 50  0001 C CNN
+	1    6300 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1250 4800 1250
+Connection ~ 4800 1250
+Wire Wire Line
+	4800 1250 5050 1250
+Connection ~ 5050 1250
+Wire Wire Line
+	5050 1250 5300 1250
+Connection ~ 5300 1250
+Wire Wire Line
+	5300 1250 5550 1250
+Connection ~ 5550 1250
+Wire Wire Line
+	5550 1250 5800 1250
+Connection ~ 5800 1250
+Wire Wire Line
+	5800 1250 6050 1250
+Connection ~ 6050 1250
+Wire Wire Line
+	6050 1250 6300 1250
+Wire Wire Line
+	6300 1250 6800 1250
+Wire Wire Line
+	6800 1250 6800 1400
+Connection ~ 6300 1250
+Wire Wire Line
+	6800 1400 6900 1400
+Connection ~ 6800 1400
+Connection ~ 6900 1400
+Wire Wire Line
+	6900 1400 7000 1400
+Connection ~ 7000 1400
+Wire Wire Line
+	7000 1400 7100 1400
+Connection ~ 7100 1400
+Wire Wire Line
+	7100 1400 7200 1400
+Connection ~ 7200 1400
+Wire Wire Line
+	7200 1400 7300 1400
+Connection ~ 7300 1400
+Wire Wire Line
+	7300 1400 7400 1400
+Connection ~ 7400 1400
+Wire Wire Line
+	7400 1400 7500 1400
+Wire Wire Line
+	4550 1550 4550 2000
+Wire Wire Line
+	4550 2000 5750 2000
+Connection ~ 5750 2000
+Wire Wire Line
+	4800 1550 4800 2100
+Wire Wire Line
+	4800 2100 6200 2100
+Connection ~ 6200 2100
+Wire Wire Line
+	5050 1550 5050 2200
+Wire Wire Line
+	5050 2200 6600 2200
+Connection ~ 6600 2200
+Wire Wire Line
+	5300 2300 7050 2300
+Connection ~ 7050 2300
+Wire Wire Line
+	5300 1550 5300 2300
+Wire Wire Line
+	5550 1550 5550 2450
+Wire Wire Line
+	5550 2450 7200 2450
+Wire Wire Line
+	7200 2450 7200 2300
+Connection ~ 7200 2300
+Wire Wire Line
+	5800 1550 5800 2600
+Wire Wire Line
+	5800 2600 7300 2600
+Wire Wire Line
+	7300 2600 7300 2200
+Connection ~ 7300 2200
+Wire Wire Line
+	6050 1550 6050 2800
+Wire Wire Line
+	6050 2800 7400 2800
+Wire Wire Line
+	7400 2800 7400 2100
+Connection ~ 7400 2100
+Wire Wire Line
+	6300 1550 6300 2900
+Wire Wire Line
+	6300 2900 7600 2900
+Wire Wire Line
+	7600 2900 7600 2000
+Connection ~ 7600 2000
+Wire Wire Line
+	7600 2000 8800 2000
+$Comp
+L Device:R R24
+U 1 1 5D849CB0
+P 10300 5400
+F 0 "R24" H 10370 5446 50  0000 L CNN
+F 1 "R" H 10370 5355 50  0000 L CNN
+F 2 "" V 10230 5400 50  0001 C CNN
+F 3 "~" H 10300 5400 50  0001 C CNN
+	1    10300 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5D849CBA
+P 10050 5400
+F 0 "R23" H 10120 5446 50  0000 L CNN
+F 1 "R" H 10120 5355 50  0000 L CNN
+F 2 "" V 9980 5400 50  0001 C CNN
+F 3 "~" H 10050 5400 50  0001 C CNN
+	1    10050 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5D849CC4
+P 9800 5400
+F 0 "R22" H 9870 5446 50  0000 L CNN
+F 1 "R" H 9870 5355 50  0000 L CNN
+F 2 "" V 9730 5400 50  0001 C CNN
+F 3 "~" H 9800 5400 50  0001 C CNN
+	1    9800 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5D849CCE
+P 9550 5400
+F 0 "R21" H 9620 5446 50  0000 L CNN
+F 1 "R" H 9620 5355 50  0000 L CNN
+F 2 "" V 9480 5400 50  0001 C CNN
+F 3 "~" H 9550 5400 50  0001 C CNN
+	1    9550 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5D849CD8
+P 9300 5400
+F 0 "R20" H 9370 5446 50  0000 L CNN
+F 1 "R" H 9370 5355 50  0000 L CNN
+F 2 "" V 9230 5400 50  0001 C CNN
+F 3 "~" H 9300 5400 50  0001 C CNN
+	1    9300 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5D849CE2
+P 9050 5400
+F 0 "R19" H 9120 5446 50  0000 L CNN
+F 1 "R" H 9120 5355 50  0000 L CNN
+F 2 "" V 8980 5400 50  0001 C CNN
+F 3 "~" H 9050 5400 50  0001 C CNN
+	1    9050 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5D849CEC
+P 8800 5400
+F 0 "R18" H 8870 5446 50  0000 L CNN
+F 1 "R" H 8870 5355 50  0000 L CNN
+F 2 "" V 8730 5400 50  0001 C CNN
+F 3 "~" H 8800 5400 50  0001 C CNN
+	1    8800 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5D849CF6
+P 8550 5400
+F 0 "R17" H 8620 5446 50  0000 L CNN
+F 1 "R" H 8620 5355 50  0000 L CNN
+F 2 "" V 8480 5400 50  0001 C CNN
+F 3 "~" H 8550 5400 50  0001 C CNN
+	1    8550 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10300 5550 10050 5550
+Connection ~ 10050 5550
+Wire Wire Line
+	10050 5550 9800 5550
+Connection ~ 9800 5550
+Wire Wire Line
+	9800 5550 9550 5550
+Connection ~ 9550 5550
+Wire Wire Line
+	9550 5550 9300 5550
+Connection ~ 9300 5550
+Wire Wire Line
+	9300 5550 9050 5550
+Connection ~ 9050 5550
+Wire Wire Line
+	9050 5550 8800 5550
+Connection ~ 8800 5550
+Wire Wire Line
+	8800 5550 8550 5550
+Connection ~ 8550 5550
+Wire Wire Line
+	7500 5550 8550 5550
+Text GLabel 10700 5550 2    50   Input ~ 0
+GND
+Wire Wire Line
+	10700 5550 10300 5550
+Connection ~ 10300 5550
+Text GLabel 4000 1250 0    50   Input ~ 0
++5V
+Wire Wire Line
+	4000 1250 4550 1250
+Connection ~ 4550 1250
+Wire Wire Line
+	5750 3650 5750 4950
+Wire Wire Line
+	5750 4950 6150 4950
+Wire Wire Line
+	6900 4950 6900 4800
+Wire Wire Line
+	6900 4800 6200 4800
+Wire Wire Line
+	6200 4800 6200 3650
+Wire Wire Line
+	7000 4950 7000 4700
+Wire Wire Line
+	7000 4700 6600 4700
+Wire Wire Line
+	6600 4700 6600 3650
+Wire Wire Line
+	7100 4950 7100 4600
+Wire Wire Line
+	7100 4600 7050 4600
+Wire Wire Line
+	7050 4600 7050 3650
+Wire Wire Line
+	7200 4950 7200 4550
+Wire Wire Line
+	7200 3650 7500 3650
+Wire Wire Line
+	7300 4950 7300 4400
+Wire Wire Line
+	7300 3950 7950 3950
+Wire Wire Line
+	7950 3950 7950 3650
+Wire Wire Line
+	7400 4950 7400 4300
+Wire Wire Line
+	7400 4300 8350 4300
+Wire Wire Line
+	8350 4300 8350 3650
+Wire Wire Line
+	7500 4950 7500 4450
+Wire Wire Line
+	7500 4450 8800 4450
+Wire Wire Line
+	8800 4450 8800 4150
+Wire Wire Line
+	8100 5250 8100 5800
+Wire Wire Line
+	8100 5800 6150 5800
+Wire Wire Line
+	6150 5800 6150 4950
+Wire Wire Line
+	8100 5250 8550 5250
+Connection ~ 6150 4950
+Wire Wire Line
+	6150 4950 6800 4950
+Wire Wire Line
+	8800 5250 8800 4800
+Wire Wire Line
+	8800 4800 6900 4800
+Connection ~ 6900 4800
+Wire Wire Line
+	9050 4700 7000 4700
+Connection ~ 7000 4700
+Wire Wire Line
+	9050 4700 9050 5250
+Wire Wire Line
+	9300 5250 9300 4600
+Wire Wire Line
+	9300 4600 7100 4600
+Connection ~ 7100 4600
+Wire Wire Line
+	9550 5250 9550 4550
+Wire Wire Line
+	9550 4550 7200 4550
+Connection ~ 7200 4550
+Wire Wire Line
+	7200 4550 7200 3650
+Wire Wire Line
+	9800 5250 9800 4400
+Wire Wire Line
+	9800 4400 7300 4400
+Connection ~ 7300 4400
+Wire Wire Line
+	7300 4400 7300 3950
+Wire Wire Line
+	10050 5250 10050 4300
+Wire Wire Line
+	10050 4300 8350 4300
+Connection ~ 8350 4300
+Wire Wire Line
+	10300 5250 10300 4150
+Wire Wire Line
+	10300 4150 8800 4150
+Connection ~ 8800 4150
+Wire Wire Line
+	8800 4150 8800 3650
+Wire Wire Line
+	6800 5550 6900 5550
+Connection ~ 7500 5550
+Connection ~ 6900 5550
+Wire Wire Line
+	6900 5550 7000 5550
+Connection ~ 7000 5550
+Wire Wire Line
+	7000 5550 7100 5550
+Connection ~ 7100 5550
+Wire Wire Line
+	7100 5550 7200 5550
+Connection ~ 7200 5550
+Wire Wire Line
+	7200 5550 7300 5550
+Connection ~ 7300 5550
+Wire Wire Line
+	7300 5550 7400 5550
+Connection ~ 7400 5550
+Wire Wire Line
+	7400 5550 7500 5550
+$EndSCHEMATC
